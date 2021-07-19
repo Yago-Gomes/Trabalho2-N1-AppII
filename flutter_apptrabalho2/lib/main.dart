@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,18 +20,23 @@ class FirstPage extends StatelessWidget {
           style: TextStyle(color: Colors.black87, fontSize: 30, fontWeight: FontWeight.bold),),
         backgroundColor: Colors.lightBlueAccent,
       ),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
           children: <Widget>[
             Padding(padding: EdgeInsets.all(10),
               child: Image.asset("images/logo2.png"),),
+
             Text("Auto Peças do Tutão", style: TextStyle(color: Colors.lightBlueAccent, fontSize: 20, fontWeight: FontWeight.bold),),
             Text("Tudo que seu JDM precisa!", style: TextStyle(color: Colors.lightBlueAccent, fontSize: 20, fontWeight: FontWeight.bold),),
+
             Padding(padding: EdgeInsets.all(10),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
               children: <Widget>[
                 Image.asset("images/car.png"),
                 Image.asset("images/tools.png"),
@@ -41,6 +44,7 @@ class FirstPage extends StatelessWidget {
               ],
             ),
             ),
+
             ElevatedButton(
               child: Text("Atendimento", style: TextStyle(color: Colors.black87),),
               onPressed: (){
@@ -71,33 +75,42 @@ class SecondPage extends StatelessWidget {
         title: Text("Contatos"),
         backgroundColor: Colors.lightBlueAccent,
       ),
+
       body: ListView(
+
         children: <Widget>[
           ListTile(
             leading: Icon(Icons.pin_drop),
             title: Text("Como chegar"),
           ),
+
           ListTile(
             leading: Icon(Icons.photo),
             title: Text("Nossos trabalhos")
           ),
+
           ListTile(
             leading: Icon(Icons.sticky_note_2_outlined),
             title: Text("Catálogo de Peças"),
           ),
+
           ListTile(
             leading: Icon(Icons.phone),
             title: Text("Telefone"),
           ),
+
           ListTile(
             leading: Icon(Icons.calendar_today),
             title: Text("Horários de atendimento"),
           ),
+
           Image.asset("images/civic.png"),
+
           Padding(padding: EdgeInsets.all(20),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
             children: [
               ElevatedButton(
                 child: Text("Página Inicial", style: TextStyle(color: Colors.black87),),
@@ -111,7 +124,6 @@ class SecondPage extends StatelessWidget {
                     textStyle: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold)),
-
                 ),
 
               ElevatedButton(
@@ -146,8 +158,10 @@ class ThirdPage extends StatelessWidget {
         title: Text("Parceiros"),
         backgroundColor: Colors.lightBlueAccent,
       ),
+
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
           children: [
             Image.asset("images/trsucatas.png"),
             Image.asset("images/ferrovelho.png"),
@@ -158,5 +172,3 @@ class ThirdPage extends StatelessWidget {
     );
   }
 }
-
-
